@@ -1,0 +1,45 @@
+1 Validação mais forte dos dados
+Usar bibliotecas como Zod ou Joi para validar entradas nas rotas, evitando dados errados ou mal formatados.
+
+2 Tratamento de erros mais detalhado
+Nos controllers, capturar erros específicos e responder com mensagens claras e códigos HTTP adequados.
+
+3 Middleware para logs personalizados
+Melhorar o logger (morgan) para registrar mais informações úteis ou salvar logs em arquivo.
+
+4 Teste automatizados
+Criar testes unitários e de integração usando Jest e Supertest para garantir que tudo funcione corretamente.
+
+5 Documentação da API
+Usar Swagger ou outra ferramenta para documentar as rotas, parâmetros e respostas.
+
+6 Criptografia de tokens refresh no banco
+Armazenar o refresh token criptografado no banco, para maior segurança.
+
+7 Melhor gerenciamento de roles
+Criar enum para roles e usar tipos TypeScript para evitar erros de digitação e facilitar manutenção.
+
+8 Melhorar feedback de respostas da API
+Padronizar o formato das respostas (ex: sempre { success: true/false, message, data }) para facilitar o consumo.
+
+9 Controle de sessões / logout
+Implementar logout removendo ou invalidando o refresh token no banco.
+
+10 Rate Limiting mais customizado
+Ajustar rate limiting por rota e usuário para evitar abuso sem prejudicar usuários reais.
+
+
+
+
+
+AdmUser:
+"name": "Maria",
+"email": "maria@email.com",
+"password": "123456",
+"role": "admuser"
+
+user:
+"name": "joao",
+"email": "neguin@email.com",
+"password": "54321",
+"role": "user"
